@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box
+}
+
+body {
+  background: #E0BB2D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Ajout de cette ligne pour avoir une hauteur de 100% de la fenêtre */
+  margin: 0;  /* Enlève la marge par défaut du body */
+}
+
+#display {
+  border: 2px solid orange;
+  background: #FAEE50;
+  padding: 20px;
+  padding-top: 30px;
+  max-width: 300px;  /* Limite la largeur pour éviter que ça soit trop grand */
+}
+
+
+#btn-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 colonnes égales */
+  gap: 10px;  /* Espacement entre les boutons */
+
+}
+
+
+
+.drum-pad {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.1s;
+  border-radius: 7px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Légère ombre */
+}
+
+.drum-pad:active {
+  transform: scale(0.95);  /* Effet de clic */
+}
+
+#result {
+  width: 200px;  /* Il prendra toute la largeur */
+  height: 60px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  /* Centrer le contenu */
+  font-size: 24px;
+  border-radius: 5px;
+  background: #A6FAE3;
+  padding: 5px;
+  color: black;
+  font-weight: 600;
+  font-family: roboto;
+}
+
