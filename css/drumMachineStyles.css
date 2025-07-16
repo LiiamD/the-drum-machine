@@ -19,7 +19,8 @@ body {
   padding: 20px;
   padding-top: 30px;
   max-width: 300px;  /* Limite la largeur pour éviter que ça soit trop grand */
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 
